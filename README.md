@@ -1,1 +1,1 @@
-# Stereotypes recognition with Prolog
+# Gender stereotype recognition with Prolog
