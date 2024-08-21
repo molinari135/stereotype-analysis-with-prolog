@@ -1,1 +1,1 @@
-# grammar-with-prolog
+# Stereotypes recognition with Prolog
