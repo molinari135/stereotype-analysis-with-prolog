@@ -34,31 +34,31 @@ Enter your choice:
 ## Modules
 
 1. `stereotypes.pl`
-  - Defines roles, traits, hypernyms and synonyms related to genders
-    - `trait(+Gender, +Trait)`: defines a trait related to a gender and it's dynamic
-    - `role(+Gender, +Role)`: defines a role related to a gender and it's dynamic
-    - `hypernym(+Hypernym, +Hyponym)`: defines a hypernym and its hyponym, and vice versa
-    - `synonym(+Word1, +Word2)`: defines a synonym for a word
+    - Defines roles, traits, hypernyms and synonyms related to genders
+        - `trait(+Gender, +Trait)`: defines a trait related to a gender and it's dynamic
+        - `role(+Gender, +Role)`: defines a role related to a gender and it's dynamic
+        - `hypernym(+Hypernym, +Hyponym)`: defines a hypernym and its hyponym, and vice versa
+        - `synonym(+Word1, +Word2)`: defines a synonym for a word
 3. `extract.pl`
-  - Provides predicates to extract information from a sentence, as traits and roles
-    - `extract_subject_object_pair(+Tokens, -SubjectObjectPairs)`: extract (Subject, Object) pairs using POS tagging
-    - `extract_subject_adjective_pair(+Tokens, -SubjectAdjectivePairs)`: extract (Subject, Adjective) pairs using POS tagging
-    - `matches_trait_or_role(+Subject, +Object)`: check the knowledge base for traits and roles related to the extracted pairs
-    - `extract_and_print(+Tokens)`: prints stereotypes found and word pairs
+    - Provides predicates to extract information from a sentence, as traits and roles
+        - `extract_subject_object_pair(+Tokens, -SubjectObjectPairs)`: extract (Subject, Object) pairs using POS tagging
+        - `extract_subject_adjective_pair(+Tokens, -SubjectAdjectivePairs)`: extract (Subject, Adjective) pairs using POS tagging
+        - `matches_trait_or_role(+Subject, +Object)`: check the knowledge base for traits and roles related to the extracted pairs
+        - `extract_and_print(+Tokens)`: prints stereotypes found and word pairs
 4. `grammar.pl`
-  - Defines DCG grammars for sentence generation based on stereotypes
-    - `sentence/1`: includes DCG predicates to generate structured sentences
-    - `subject/1`: choose the subject of the sentence (female or male-related)
-    - `adjective_for_subject/1`: choose the appropriate adjective (trait) for a certain subject
-    - `role_for_subject/1`: choose the appropriate noun (role) for a certain subject
+    - Defines DCG grammars for sentence generation based on stereotypes
+        - `sentence/1`: includes DCG predicates to generate structured sentences
+        - `subject/1`: choose the subject of the sentence (female or male-related)
+        - `adjective_for_subject/1`: choose the appropriate adjective (trait) for a certain subject
+        - `role_for_subject/1`: choose the appropriate noun (role) for a certain subject
 5. `bfs.pl`
-  - Best-First Search implementation in Prolog for hyponym search
-    - `find_word_gender_bfs(+Word, -Gender)`: find the gender related to a word
-    - `show_operations_bfs/0`: shows the number of operations needed to find a solution
+    - Best-First Search implementation in Prolog for hyponym search
+        - `find_word_gender_bfs(+Word, -Gender)`: find the gender related to a word
+        - `show_operations_bfs/0`: shows the number of operations needed to find a solution
 6. `dfs.pl`
-  - Depth-First Search implementation in Prolog for hyponym search
-    - `find_word_gender_dfs(+Word, -Gender)`: find the gender related to a word
-    - `show_operations_dfs/0`: shows the number of operations needed to find a solution
+    - Depth-First Search implementation in Prolog for hyponym search
+        - `find_word_gender_dfs(+Word, -Gender)`: find the gender related to a word
+        - `show_operations_dfs/0`: shows the number of operations needed to find a solution
 7. `menu.pl`
-  - A simple CLI menu to test the system
-    - `menu/0`: shows the main menu with all the available options
+    - A simple CLI menu to test the system
+        - `menu/0`: shows the main menu with all the available options
