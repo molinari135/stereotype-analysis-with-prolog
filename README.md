@@ -1,5 +1,11 @@
 # Gender stereotype recognition with Prolog
 
+[![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
+
+[cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
+[cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
+[cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg
+
 ## Abstract
 
 Stereotypes are generalized belief about a particular category of people and are used as expectation that people might have about every person of a particular group. They are often overgeneralized, inaccurate, and resistant to new information and they can be positive, neutral, or negative. The main idea of this project is to analyze and extract classic explicit stereotypes from everyday language through logic programming. The full documentation can be found on this [document](https://github.com/burraco135/stereotype-analysis-with-prolog/blob/master/Stereotype_analysis_with_Prolog.pdf).
@@ -58,6 +64,14 @@ Enter your choice:
 6. `dfs.pl`
     - Depth-First Search implementation in Prolog for hyponym search
         - `find_word_gender_dfs(+Word, -Gender)`: find the gender related to a word
+
+## License
+
+This work is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].
+
+For a copy of the license, please visit https://creativecommons.org/licenses/by-nc/4.0/
+
+[![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
         - `show_operations_dfs/0`: shows the number of operations needed to find a solution
 7. `menu.pl`
     - A simple CLI menu to test the system
