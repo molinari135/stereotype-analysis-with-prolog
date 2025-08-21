@@ -64,6 +64,10 @@ Enter your choice:
 6. `dfs.pl`
     - Depth-First Search implementation in Prolog for hyponym search
         - `find_word_gender_dfs(+Word, -Gender)`: find the gender related to a word
+        - `show_operations_dfs/0`: shows the number of operations needed to find a solution
+7. `menu.pl`
+    - A simple CLI menu to test the system
+        - `menu/0`: shows the main menu with all the available options
 
 ## License
 
@@ -72,7 +76,3 @@ This work is licensed under the [Creative Commons Attribution-NonCommercial 4.0 
 For a copy of the license, please visit https://creativecommons.org/licenses/by-nc/4.0/
 
 [![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
-        - `show_operations_dfs/0`: shows the number of operations needed to find a solution
-7. `menu.pl`
-    - A simple CLI menu to test the system
-        - `menu/0`: shows the main menu with all the available options
